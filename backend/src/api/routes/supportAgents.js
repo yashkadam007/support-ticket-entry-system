@@ -1,10 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.post('/',(req, res, next) =>{
-    res.status(200).json({
-        message:'Handling post request to support agent'
-    });
-});
+const supportAgentController = require('../controllers/supportAgents');
+
+router.post('/',supportAgentController.createSupportAgent);
 
 module.exports = router;
