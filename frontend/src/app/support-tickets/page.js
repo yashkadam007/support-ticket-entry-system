@@ -122,6 +122,7 @@ const supportTicketPage = () => {
                     <th>Description</th>
                     <th>Date Created</th>
                     <th>Severity</th>
+                    <th>Type</th>
                     <th>Assigned To</th>
                     <th>Status</th>
                     <th>Resolved On</th>
@@ -134,6 +135,7 @@ const supportTicketPage = () => {
                         <th>{ticket.description}</th>
                         <th>{ticket.dateCreated}</th>
                         <th>{ticket.severity}</th>
+                        <th>{ticket.type}</th>
                         <th>{ticket.assignedTo}</th>
                         <th>{ticket.status}</th>
                         <th>{ticket.resolvedOn}</th>
