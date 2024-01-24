@@ -59,3 +59,21 @@ exports.createSupportAgent = (req, res, next) =>{
         });
     });
 };
+
+exports.getAllSupportAgent = async (req, res, next) => {
+    try {
+        const supportAgents = await SupportAgent.find().exec();
+
+        res.status(200).json({
+            message: 'Successfully fetched support Agentss',
+            supportAgents: supportAgents,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            error: {
+                message: 'Internal Server Error',
+            },
+        });
+    }
+};
