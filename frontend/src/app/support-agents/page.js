@@ -8,7 +8,7 @@ const supportAgentPage = () => {
     //getAllAgents api
     const fetchAgents = async () => {
         try {
-          const res = await fetch('http://localhost:3001/api/support-agents', {
+          const res = await fetch('https://support-ticket-backend-chi.vercel.app/api/support-agents', {
             cache: 'no-store'
           });
           const agentsData = await res.json();
@@ -33,7 +33,7 @@ const supportAgentPage = () => {
           description: event.target.description.value,
         };
       
-        fetch('http://localhost:3001/api/support-agents', {
+        fetch('https://support-ticket-backend-chi.vercel.app/api/support-agents', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

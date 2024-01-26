@@ -8,7 +8,7 @@ const supportTicketPage = () => {
     //getAlltickets api
     const fetchTickets = async () => {
         try {
-          const res = await fetch('http://localhost:3001/api/support-tickets', {
+          const res = await fetch('https://support-ticket-backend-chi.vercel.app/api/support-tickets', {
             cache: 'no-store'
           });
           const ticketsData = await res.json();
@@ -34,7 +34,7 @@ const supportTicketPage = () => {
       resolvedOn: event.target.resolvedOn.value,
     };
   
-    fetch('http://localhost:3001/api/support-tickets', {
+    fetch('https://support-ticket-backend-chi.vercel.app/api/support-tickets', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
