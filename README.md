@@ -15,3 +15,5 @@ Complete frontend and backend for creating support agent and support ticket with
   - In frontend folder
     - `npm run dev`
 - Open the browser at `localhost:3000` 
+
+live application link: https://support-ticket-entry-system-mauve.vercel.app/support-agents
